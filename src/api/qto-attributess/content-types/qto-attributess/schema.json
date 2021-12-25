@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qto_attributes",
+  "info": {
+    "singularName": "qto-attributess",
+    "pluralName": "qto-attributes",
+    "displayName": "QTO Attributes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Native_Revit_Format": {
+      "type": "string",
+      "required": true
+    },
+    "Revit_Category": {
+      "type": "string",
+      "required": true
+    },
+    "Revit_Category_Definition": {
+      "type": "string",
+      "required": true
+    },
+    "Unit_Of_Measurment": {
+      "type": "string",
+      "required": true
+    },
+    "Filter1": {
+      "type": "string",
+      "required": true
+    },
+    "Attribute": {
+      "type": "string",
+      "required": true
+    },
+    "Filter_Parameter": {
+      "type": "string",
+      "required": true
+    },
+    "Revit_BuiltIn_Definition": {
+      "type": "string",
+      "required": true
+    },
+    "Filter2": {
+      "type": "string",
+      "required": true
+    },
+    "Formula_Needed_Boolean": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Formula_Definition": {
+      "type": "string",
+      "required": true
+    },
+    "Formula_Definition_Code": {
+      "type": "string",
+      "required": true
+    },
+    "Notes": {
+      "type": "text"
+    },
+    "BIM_Standardization_Recommendation": {
+      "type": "text"
+    },
+    "QS_Sheet": {
+      "type": "string"
+    },
+    "product_costs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-cost.product-cost",
+      "mappedBy": "qto_attribute"
+    }
+  }
+}

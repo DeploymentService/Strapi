@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "modelss",
+    "pluralName": "models",
+    "displayName": "Models"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Model_Number": {
+      "type": "integer",
+      "required": true
+    },
+    "Template_Values": {
+      "type": "string",
+      "required": true
+    },
+    "Area": {
+      "type": "decimal",
+      "required": true
+    },
+    "Number_Of_Stories": {
+      "type": "integer",
+      "required": true
+    },
+    "Number_Of_Bathroom": {
+      "type": "integer",
+      "required": true
+    },
+    "Number_Of_Bedrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "Min_Lot_Size": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

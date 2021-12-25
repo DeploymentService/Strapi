@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_selections",
+  "info": {
+    "singularName": "user-selection",
+    "pluralName": "user-selections",
+    "displayName": "User Selection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Attribute_Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Attribute_Value": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "User": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-info.user-info"
+    }
+  }
+}
